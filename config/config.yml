@@ -1,4 +1,4 @@
-# config.yaml
+# 192.168.1.66
 storage: /verdaccio/storage
 auth:
   htpasswd:
@@ -9,10 +9,15 @@ uplinks:
     url: https://registry.npmjs.org/
 packages:
   '@onead-ito/*':
-    access:  $authenticated
+    access: $authenticated
     publish: $authenticated
+    proxy: npmjs
   '**':
-    access: $all
+    access: $authenticated
     publish: $authenticated
+    proxy: npmjs
+middlewares:
+  audit:
+    enabled: true
 logs:
-  - { type: stdout, format: pretty, level: http }
+  - {type: stdout, format: pretty, level: http}
