@@ -1,8 +1,8 @@
-FROM verdaccio/verdaccio
+# Use the official Verdaccio image from Docker Hub
+FROM verdaccio/verdaccio:latest
 
-USER root
+# Expose the port that Verdaccio listens on
+EXPOSE 4873
 
-ENV NODE_ENV=production
-
-RUN pnpm install
-USER verdaccio
+# Run Verdaccio
+CMD [ "verdaccio" ]
