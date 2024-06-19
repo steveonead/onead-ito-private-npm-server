@@ -1,15 +1,24 @@
 # 192.168.1.66
+listen: 192.168.1.66:4873
 storage: /verdaccio/storage
 auth:
   htpasswd:
     file: /verdaccio/conf/htpasswd
     max_users: 10
+web:
+  title: OneAD ITO private server
+  logo: https://oneadweb-onead.cdn.hinet.net/wp-content/uploads/2023/07/981279_Left.svg
+  favicon: https://oneadweb-onead.cdn.hinet.net/wp-content/themes/onead/static/favicon.png
+  primary_color: '#4188F2'
+  pkgManagers:
+    - npm
+    - pnpm
 uplinks:
   npmjs:
     url: https://registry.npmjs.org/
 packages:
   '@onead-ito/*':
-    access: $authenticated
+    access: $all
     publish: $authenticated
     proxy: npmjs
   '**':

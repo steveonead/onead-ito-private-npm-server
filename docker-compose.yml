@@ -7,6 +7,6 @@ services:
     ports:
       - "4873:4873"
     volumes:
-      - ./storage:/storage
-      - ./config:/config
+      - ./storage:/verdaccio/storage
+      - ./config:/verdaccio/conf
     restart: always

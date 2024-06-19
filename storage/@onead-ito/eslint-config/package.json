@@ -1,0 +1,80 @@
+{
+	"name": "@onead-ito/eslint-config",
+	"versions": {
+		"0.0.2": {
+			"name": "@onead-ito/eslint-config",
+			"type": "module",
+			"version": "0.0.2",
+			"packageManager": "pnpm@8.15.8+sha512.d1a029e1a447ad90bc96cd58b0fad486d2993d531856396f7babf2d83eb1823bb83c5a3d0fc18f675b2d10321d49eb161fece36fe8134aa5823ecd215feed392",
+			"description": "ESLint Config for OneAD ITO Team. Powered by @antfu/eslint-config",
+			"author": {
+				"name": "@onead-ito"
+			},
+			"license": "ISC",
+			"keywords": [],
+			"exports": {
+				".": {
+					"import": "./dist/index.js",
+					"require": "./dist/index.cjs"
+				}
+			},
+			"main": "dist/index.cjs",
+			"module": "dist/index.js",
+			"scripts": {
+				"build": "rollup -c",
+				"lint": "eslint . --fix",
+				"release": "standard-version && git push --follow-tags origin main"
+			},
+			"peerDependencies": {
+				"eslint": ">=8.57.0"
+			},
+			"dependencies": {
+				"@antfu/eslint-config": "^2.21.1",
+				"eslint-plugin-cypress": "^3.3.0",
+				"eslint-plugin-simple-import-sort": "^12.1.0",
+				"eslint-plugin-sonarjs": "^1.0.3",
+				"eslint-plugin-tailwindcss": "^3.17.3",
+				"local-pkg": "^0.5.0"
+			},
+			"devDependencies": {
+				"@rollup/plugin-commonjs": "^26.0.1",
+				"@rollup/plugin-json": "^6.1.0",
+				"@rollup/plugin-node-resolve": "^15.2.3",
+				"eslint": "^9.5.0",
+				"rollup": "^4.18.0",
+				"standard-version": "^9.5.0"
+			},
+			"_id": "@onead-ito/eslint-config@0.0.2",
+			"readmeFilename": "README.md",
+			"gitHead": "7a432ead90d5ecbbd281c6cdf23c175eb35e1555",
+			"_nodeVersion": "20.13.1",
+			"_npmVersion": "10.5.2",
+			"dist": {
+				"integrity": "sha512-jSyX7mMSnmbxxuhI3AjOVQCX79AeVk8iD1WVUC6gNMgxD9ycbzJOIDKRnsmsKyLgz+Rqidi/+n6GL8EzlGdUZA==",
+				"shasum": "ac22f9286eb31662c421a0a3a953894cf0ef3300",
+				"tarball": "http://192.168.1.66:4873/@onead-ito/eslint-config/-/@onead-ito/eslint-config-0.0.2.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2024-06-19T08:51:18.772Z",
+		"created": "2024-06-19T08:51:18.772Z",
+		"0.0.2": "2024-06-19T08:51:18.772Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "0.0.2"
+	},
+	"_uplinks": {},
+	"_distfiles": {},
+	"_attachments": {
+		"eslint-config-0.0.2.tgz": {
+			"shasum": "ac22f9286eb31662c421a0a3a953894cf0ef3300",
+			"version": "0.0.2"
+		}
+	},
+	"_rev": "4-97272041f0c21c6c",
+	"_id": "@onead-ito/eslint-config",
+	"readme": "# OneAd ITO ESLint Config"
+}
