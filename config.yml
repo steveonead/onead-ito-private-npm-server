@@ -1,0 +1,18 @@
+# config.yaml
+storage: /verdaccio/storage
+auth:
+  htpasswd:
+    file: /verdaccio/conf/htpasswd
+    max_users: 10
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+packages:
+  '@onead-ito/*':
+    access:  $authenticated
+    publish: $authenticated
+  '**':
+    access: $all
+    publish: $authenticated
+logs:
+  - { type: stdout, format: pretty, level: http }
